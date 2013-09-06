@@ -31,7 +31,7 @@ sub is_cjk_lang {
       && ($charset !~ /^U/
         || $locale =~ /^ja/
         || $locale =~ /^ko/
-        || $locale =~ /^zh/);
+        || $locale =~ /^zh/) ? 1 : 0;
 }
 
 1;
