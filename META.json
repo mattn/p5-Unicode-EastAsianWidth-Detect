@@ -4,7 +4,7 @@
       "mattn <mattn.jp@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.6.5, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Minilla/v0.6.5, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -52,5 +52,15 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/mattn/p5-Unicode-EastAsianWidth-Detect/issues"
+      },
+      "homepage" : "https://github.com/mattn/p5-Unicode-EastAsianWidth-Detect",
+      "repository" : {
+         "url" : "https://github.com/mattn/p5-Unicode-EastAsianWidth-Detect.git",
+         "web" : "https://github.com/mattn/p5-Unicode-EastAsianWidth-Detect"
+      }
+   },
    "version" : "0.01"
 }
