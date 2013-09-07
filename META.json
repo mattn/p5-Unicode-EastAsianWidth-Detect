@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Detect CJK Language",
    "author" : [
       "mattn <mattn.jp@gmail.com>"
    ],
@@ -62,5 +62,5 @@
          "web" : "https://github.com/mattn/p5-Unicode-EastAsianWidth-Detect"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
