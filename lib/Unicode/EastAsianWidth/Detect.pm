@@ -6,7 +6,7 @@ use POSIX qw(setlocale LC_CTYPE);
 use base 'Exporter';
 our @EXPORT = qw/is_cjk_lang /;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 # based on https://sourceware.org/cgi-bin/cvsweb.cgi/src/newlib/libc/locale/locale.c?rev=1.51&content-type=text/x-cvsweb-markup&cvsroot=src
 sub is_cjk_lang {
