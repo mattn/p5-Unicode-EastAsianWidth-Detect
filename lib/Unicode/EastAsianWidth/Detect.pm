@@ -14,8 +14,14 @@ sub is_cjk_lang {
   # ignore C locale
   return 0 if $locale eq 'POSIX';
   return 0 if $locale eq 'C' || $locale =~ /^C[-.]/;
-  return 0 if $locale !~ /^[a-z][a-z][a-z]?(?:_[A-Z][A-Z])?.(.+)/;
-  my $charset = $1;
+  my $charset = $locale;
+  if ($^O eq 'MSWin32') {
+    $charset =~ s/^[a-zA-Z][a-zA-Z]+(?:_[a-zA-Z][a-zA-Z]+)?\.(.+)/$1/;
+    $charset = "cp$charset" if $charset =~ /^[0-9]+$/;
+  } else {
+    $charset =~ s/^[a-z][a-z][a-z]?(?:_[A-Z][A-Z])?\.(.+)/$1/;
+  }
+  return unless $charset;
   my $cjk_narrow = $charset =~ /\@cjknarrow$/;
   $charset =~ s/@.*//;
   my $mbc_max =
